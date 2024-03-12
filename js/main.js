@@ -4,16 +4,20 @@ var title = document.getElementById('game-title');
 var level = document.getElementById('level');
 var score = document.getElementById('score');
 
+var start = document.getElementById('start');
+
 var red = document.getElementById('red');
 var green = document.getElementById('green');
 var blue = document.getElementById('blue');
 var yellow = document.getElementById('yellow');
 
-document.addEventListener('start', startGame);
+start.addEventListener('click', startGame);
 
 function startGame() {
-    console.log("startGame")
-    //newLevel();
+    patron = [];
+    numLevel = 0;
+    level.innerText = 'Nivel ' + numLevel;
+    score.innerText = 'Puntos: 0';
 }
 
 function newLevel() {
